@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Mooli', sans-serif;
+}
+body{
+    background: #A0BDA9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content-card{
+    background: #fff;
+    width: 800px;
+    height: 420px;
+    display: flex;
+}
+
+
+.card-tennis{
+    background-color: #E8E8E6;
+    width: 400px;
+    height: 100%;
+}
+
+.image-tenis{
+    height: 300px;
+    background-size: contain;
+    background-image: url(../../../Aseets/Imagenes/tennis.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: 30px;
+}
+
+
+.buttons-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-imagen button{
+    padding: 3px;
+    border-radius: 100% ;
+    font-size: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 100%;
+    background: transparent;
+    border: 1px solid #2e2e2e;
+}
+
+.buttons-imagen button:hover{
+    padding: 2px;
+    background-color: #2e2e2e;
+}
+
+.card-tennis-information{
+    background-color: #FAE8E5 ;
+    width: 400px;
+    height: 100%;
+}
+
+.content-information{
+    margin: 30px;
+}
+
+
+.icono-heart{
+    display: flex;
+    justify-content: right;
+}
+
+
+
+.title{
+    padding: 30px 0 10px 0;
+  
+}
+
+.sub-title{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.size{
+    font-size: 10px;
+}
+
+
+.precio-rebaja{
+    padding-bottom: 10px;
+}
+
+.rebaja{
+    font-size: 10px;
+    text-align: right;
+    text-decoration: line-through;
+}
+
+
+.tennis-details{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.title-colors, .title-sizes, .title-description {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+
+.size-button{
+    padding: 10px;
+    border-radius: 100%;
+    border: none;
+    margin-right: 10px;
+}
+
+
+.size-button:hover{
+    border: 3px solid #fff;
+}
+
+.first-color{
+    background-color: #E0CECA;
+}
+
+.two-color{
+    background-color: #A0BDA9;
+}
+
+.three-color{
+    background-color: #000;
+}
+
+.buttons-sizes button{
+    font-size: 8px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 100%;
+    background: transparent;
+}
+
+.buttons-sizes button:hover{
+    background: #fff;
+}
+
+.size-2{
+    font-size: 8px;
+}
+
+.tennis-add{
+    padding-top: 10px;
+}
+
+.add-delate{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+
+.remove{
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    background-image: url(../../../Aseets/Imagenes/svg/remove.svg);
+}
+
+.contador{
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    
+}
+
+.add{
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    background-image: url(../../../Aseets/Imagenes/svg/add.svg);
+}
+
+.buttons-add{
+    padding-top: 15px;
+}
+
+.add-to-cart{
+    padding:10px 20px ;
+    border-radius:50px;
+    background-color: #2e2e2e;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+
+
+
