@@ -30,7 +30,7 @@ body{
 .image-tenis{
     height: 300px;
     background-size: contain;
-    background-image: url(../../../Aseets/Imagenes/tennis.png);
+    background-image: url(../Aseets/Imagenes/tennis.png);
     background-repeat: no-repeat;
     background-position: bottom;
     margin: 30px;
@@ -169,12 +169,16 @@ body{
     width: 100px;
 }
 
+.add, .remove {
+    cursor: pointer;
+}
+
 
 .remove{
     background-repeat: no-repeat;
     width: 18px;
     height: 18px;
-    background-image: url(../../../Aseets/Imagenes/svg/remove.svg);
+    background-image: url(../Aseets/Imagenes/svg/remove.svg);
 }
 
 .contador{
@@ -188,7 +192,7 @@ body{
     background-repeat: no-repeat;
     width: 18px;
     height: 18px;
-    background-image: url(../../../Aseets/Imagenes/svg/add.svg);
+    background-image: url(../Aseets/Imagenes/svg/add.svg);
 }
 
 .buttons-add{
