@@ -148,3 +148,72 @@ const precioOriginal = new Producto("Kitkat", 200, 41.5);
 
 // aqui estoy llamando al metodo
 precioOriginal.calcularDescuento(10);
+
+// 3. Crea una función constructora llamada Estudiante que acepte dos parámetros: nombre y edad. Luego, agrega un método llamado esMayorDeEdad al prototipo de Estudiante que determine si el estudiante es mayor de edad (es decir, si su edad es igual o superior a 18). Crea una instancia de Estudiante con un nombre y una edad, y utiliza el método esMayorDeEdad para determinar si es mayor de edad o no.
+
+function Estudiante(nombre = "", edad = 0) {
+  //Atributos
+  this.nombre = nombre;
+  this.edad = edad;
+}
+//metodo
+Estudiante.prototype.esMayorDeEdad = function () {
+  if (this.edad >= 18) {
+    console.log(
+      `El estudiante ${this.nombre} tiene ${this.edad} años eso significa que es mayor de edad`
+    );
+  } else {
+    console.log(
+      `El estudiante ${this.nombre} tiene ${this.edad} años eso significa que es menor de edad`
+    );
+  }
+};
+
+//instancia
+const estudiante = new Estudiante("Alicia", 15);
+
+// aqui estoy llamando al metodo
+estudiante.esMayorDeEdad();
+
+// 4. Clase Circulo: Crea una clase constructora llamada "Circulo" que acepte el radio como parámetro. Agrega un método llamado "calcularArea" al prototipo de Circulo que calcule el área del círculo.
+
+// El área de un círculo es pi multiplicado por el radio al cuadrado (A = π r²).
+
+function Circulo(radio = 0) {
+  this.radio = radio;
+}
+
+Circulo.prototype.calcularArea = function () {
+  const newArea = 3.1416 * this.radio ** 2;
+  //   console.log(this.radio)
+  console.log(
+    `Si el radio del circulo es ${this.radio} entonces su área es de ${newArea}`
+  );
+};
+
+const area = new Circulo(4);
+
+area.calcularArea();
+
+//5. Clase Empleado: Crea una clase constructora llamada "Empleado" que acepte tres parámetros: nombre, salario mensual y horas trabajadas. Agrega un método llamado "calcularSalarioTotal" al prototipo de Empleado que calcule el salario total de un empleado, teniendo en cuenta las horas extras y un pago adicional por ellas.
+
+function Empleado(
+  nombre = "",
+  salarioMesual = 0,
+  horasTrabajadas = 0,
+  horasExtras = 0
+) {
+  this.nombre = nombre;
+  this.salarioMesual = salarioMesual;
+  this.horasTrabajadas = horasTrabajadas;
+  this.horasExtras = horasExtras;
+}
+
+Empleado.prototype.calcularSalarioTotal = function () {
+  const sumaDeSalario = this.salarioMesual / this.horasTrabajadas;
+  console.log(sumaDeSalario);
+};
+
+const salarioTotal = new Empleado("Marisol", 50, 6, 4);
+
+salarioTotal.calcularSalarioTotal();
