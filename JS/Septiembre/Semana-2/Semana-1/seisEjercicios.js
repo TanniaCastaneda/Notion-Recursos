@@ -199,21 +199,25 @@ area.calcularArea();
 
 function Empleado(
   nombre = "",
-  salarioMesual = 0,
   horasTrabajadas = 0,
+  salarioPorHoras = 0,
   horasExtras = 0
 ) {
   this.nombre = nombre;
-  this.salarioMesual = salarioMesual;
   this.horasTrabajadas = horasTrabajadas;
+  this.salarioPorHoras = salarioPorHoras;
   this.horasExtras = horasExtras;
 }
 
 Empleado.prototype.calcularSalarioTotal = function () {
-  const sumaDeSalario = this.salarioMesual / this.horasTrabajadas;
-  console.log(sumaDeSalario);
+  const sumaDeSalario = this.salarioPorHoras * this.horasTrabajadas;
+  const salarioMensual =
+    sumaDeSalario + this.salarioPorHoras * this.horasExtras;
+  console.log(
+    `Tu salario es de ${sumaDeSalario} pesos y contado tus horas extras tu salio total es de ${salarioMensual} pesos`
+  );
 };
 
-const salarioTotal = new Empleado("Marisol", 50, 6, 4);
+const salarioTotal = new Empleado("Marisol", 6, 100, 4);
 
 salarioTotal.calcularSalarioTotal();
