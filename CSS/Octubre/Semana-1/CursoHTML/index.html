@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera Página Web</title>
+    <!-- metadatos -->
+    <meta name="author" content="Tannia Isabel">
+    <meta name="description" content="Primera Semana">
+    <meta name="keywords" content="tutorial, desarrollo web, tannia isabel">
+    <!-- <meta http-equiv="refresh" content="5, http://www.instragram.com"> refresca la página y te redirije-->
+    <!-- <meta http-equiv="cookie" content="user=tannia; expires=">  Con js-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <style>
+        table{
+            border-collapse: collapse;
+            border: 2px solid rgba(200,200,200);
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+        }
+
+        td, th{
+            border: 1px solid  rgba(190,190,190);
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <header>
+        <nav></nav>
+    </header>
+
+    <section>
+        <article></article>
+        <article></article>
+    </section>
+
+    <aside></aside>
+
+    <footer></footer> -->
+    <h1>TITULO PRINCIPAL</h1>
+    <h2>TITULO SECUNDARIO</h2>
+    <h3>TITULOS DEMÁS</h3>
+    <hr>
+    <p class="parrafo" style="border: 1px solid black;">Este texto es negrita <b style="background-color: yellow;">NEGRITA</b></p>
+    <p class="parrafo">Este texto es negrita <i style="background-color: aqua;">CURSIVA</i></p>
+    <hr>
+    <p>Este texto es imporntante <strong>IMPORTANTE</strong></p>
+    <P>Este texto es enfatico <em>ÉNFATICO</em></P>
+    <hr>
+    <pre>
+        aca va otro
+        aca otro
+        cd
+    </pre>
+    <hr>
+    <blockquote>"El mejor momento del día es ahora".</blockquote>
+    <p><q cite="https.//">El mejor momento del día es ahora.</q></p>
+    <hr>
+    <p>daffd:<q lang="JA-ja">daas</q></p>
+    <hr>
+    <p>hipotenusa <sup>2</sup> = cateto opuesto <sup>2</sup> + cateto adyecente <sub>2</sub></p>
+    <p>Agua es : H<sub>2</sub>0</p>
+    <hr>
+    <p>Desde la tierra a la luna hay 3.84.400 <abbr title="kilómentros">Kms</abbr></p>
+    <hr>
+    <p>Colocá el mouse encima de esta palabra para saberlo: <acronym title="Organización mundial de la nación">OMS</acronym></p>
+    <br>
+    <a href="https://www.google.com/" target="_blank">Haz clic aquí</a>
+    <a href="mailto:tanniacp05@gmail.com">para emaill</a>
+    <a href="tel:+9212333178">Llamar por telefono</a>
+    <hr>
+    <h2>Imágenes</h2>
+    <!-- assets para archivos dinámicos -->
+    <!-- .. caundo esta en una carpeta y sale a otra, en la raíz no -->
+    <img src="icon.png" alt="un corazoncito">
+    <hr>
+    <a href="https://www.google.com/" target="_blank"><img src="icon.png" alt=""></a>
+    <hr>
+    <h2>Video</h2>
+    <video src="only.mp4" controls autoplay muted width="200px" height=""></video>
+    <video controls autoplay muted poster="icon.png">
+        <source src="" type="video/mp4"> 
+        <p>Tu navegador no soporta este formato para poder descargarlo haz ckik aqui <a href=""></a></p>
+    </video>
+    <hr>
+    <h2>Audio</h2>
+    <audio src="" controls muted autoplay></audio>
+    <hr>
+    <h2>Listas</h2>
+    <!-- ordenada 1, 2, 3 -->
+    <!-- desordenada puntos -->
+    <p>lista del ordenada</p>
+    <ul>
+        <li>Verdura</li>
+        <li>Pollo</li>
+        <li>Vainilla</li>
+    </ul>
+
+    <p>lista del desordenada</p>
+    <ol start="5" reversed type="A">
+        <li>Verdura</li>
+        <li>Pollo
+            <ul>
+                <li>Caldo de pollo</li>
+                <li>Mole</li>
+            </ul>
+        </li>
+        <li>Vainilla</li>
+    </ol>
+    <hr>
+    <h2>Tablas</h2>
+    <h3>Tabla de mis alumnos</h3>
+    <table>
+        <colgroup>
+            <col style="background-color: rgb(220, 207, 207);">
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+
+
+        <tr>
+            <th>&nbsp;</th>
+            <th>Pedro</th>
+            <th>Ricardo</th>
+            <th>Abanella</th>
+        </tr>
+        <tr>
+            <td>Edad</td>
+            <td>23</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Materia</td>
+            <td>React</td>
+            <td>JavaScript</td>
+            <td>HTML</td>
+        </tr>
+        <tr>
+            <td>Promedio</td>
+            <td>10</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Aprobado</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>Sí</td>
+        </tr>
+        <tr>
+            <td>Años cursados</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Agrupadores</h2>
+    <div>
+        <h2>Titulo Secundario</h2>
+        <p>Este es el contendido de este artículo</p>
+        <img src="icon.png" alt="Es un corazón">
+    </div>
+    <span><strong>Tannia Isabel Castañeda Pérez: </strong><em>05/12/2003</em></span>
+    <hr>
+    <h1>Iframe</h1>
+
+    <iframe height="200" src="https://www.youtube.com/embed/S7xTBa93TX8?si=bBD6c5alMv5zy8BC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <hr>
+    <iframe src="https://concepto.de/mariposas/" frameborder="0"></iframe>
+
+ 
+</body>
+</html> 

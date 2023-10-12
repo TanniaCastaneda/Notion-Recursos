@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* background: #2e2e2e url() no-repeat ; */
+    /* background-attachment: fixed; te sigue la imagen*/
+    /* background: linear-gradient(90deg, #2e2e2e 0%, #fff 20%, #2e2e2e 90%) ; */
+}
+
+h1{
+    padding: 10px;
+    border: 1px solid #fff;
+    text-align: center;
+    /* cuarto valor es el alfa */
+    /* background-color: rgb(235, 154, 154, 0.5); */
+    background-color: hsla(0, 37%, 76%, 0.801);
+    /* hue => inclinación */
+    /* porcentaje */
+    /* iluminación */
+    /* alfa o transparecia=> cuarta posición */
+}
+
+p{
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+p.dotted{
+    border-style: dotted ;
+}
+
+p.dashed{
+    border-style: dashed ;
+}
+
+p.solid{
+    border-style: solid ;
+}
+
+p.double{
+    border-style: double ;
+}
+
+p.groove{
+    border-style: groove ;
+}
+
+p.ridge{
+    border-style: ridge ;
+}
+
+p.inset{
+    border-style: inset;
+}
+
+p.outset{
+    border-style: outset ;
+}
+
+p.none{
+    border-style: none;
+}
+
+p.hidden{
+    border-style: hidden ;
+}
+
+p.mix{
+    border-style: dotted dashed groove ridge ;
+}
+
+
+.cajita1{
+    width: 300px;
+    min-height: 100px;
+    padding: 30px;
+    background: #2e2e2e;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.cajita2{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background: #2e2e2e;
+    margin: 10px 10px 10px 50px;
+}
+
+.cajita3{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background: #2e2e2e;
+    margin-top: 10px;
+}
+
+
+.cajitaazul{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
+.cajitaroja{
+    width: 100px;
+    min-height: 100px;
+    border: 2px solid black;
+}
