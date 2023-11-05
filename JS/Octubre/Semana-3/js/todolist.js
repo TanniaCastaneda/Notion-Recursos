@@ -5,6 +5,21 @@ const taskBox = document.getElementById("task-box");
 
 let todos = JSON.parse(localStorage.getItem("todo-list")) || [];
 
+submitButton.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const inputValue = inputElement.value.trim();
+
+  if (inputValue !== "") {
+    inputElement.value = "";
+    const taskInfo = { name: inputValue, status: "active" };
+    todos.push(taskInfo);
+    localStorage.setItem("todo-list", JSON.stringify(todos));
+    showTodo("add");
+  } else {
+    console.error("por favor ingrese una tarea");
+  }
+});
+
 function updateFilters() {
   filters.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -59,21 +74,6 @@ function updateStatus(selectedTask) {
   }
   localStorage.setItem("todo-list", JSON.stringify(todos));
 }
-
-submitButton.addEventListener("click", (e) => {
-  e.preventDefault();
-  const inputValue = inputElement.value.trim();
-
-  if (inputValue !== "") {
-    inputElement.value = "";
-    const taskInfo = { name: inputValue, status: "active" };
-    todos.push(taskInfo);
-    localStorage.setItem("todo-list", JSON.stringify(todos));
-    showTodo("add");
-  } else {
-    console.error("por favor ingrese una tarea");
-  }
-});
 
 updateFilters();
 showTodo("add");
