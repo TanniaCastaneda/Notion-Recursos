@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practica</title>
+    <link rel="stylesheet" href="../Semana-3/styles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="#"><img src="../Semana-3/imgs/logo.png" alt="" srcset="" /></a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Insights</a></li>
+        </ul>
+      </nav>
+      <div class="container-btns">
+        <button id="singUp" class="singUp">Sign up</button>
+        <button class="logIn">Log In</button>
+        <button class="contact">Contact us</button>
+      </div>
+    </header>
+    <main>
+      <section class="pageOne">
+        <div class="contentPageOne">
+          <div class="pageOne-information">
+            <div class="miTitle">
+              <h1>
+                <span>Entrepreneurs</span>
+                <span>One Stop Shop</span>
+              </h1>
+            </div>
+            <p>We take care of all your paperwork and legal applications.</p>
+            <button class="getStartet">Get startet</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="modal" class="modal">
+        <section class="wrapper-form">
+          <div class="btn-close">
+            <button id="btn-close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="title-form">
+            <p>Sing in</p>
+          </div>
+          <form id="login-form">
+            <!-- Email -->
+            <div class="wraper-datos">
+              <div class="wraper-details">
+                <label for="correo">E-mail</label>
+                <input type="email" id="correo" name="correo" required />
+                <span id="correo-error" class="error-message"></span>
+              </div>
+              <!-- Password -->
+              <div class="wraper-details">
+                <label for="contrasena">Password</label>
+                <input
+                  type="password"
+                  id="contrasena"
+                  name="contrasena"
+                  required
+                />
+                <span id="contrasena-error" class="error-message"></span>
+              </div>
+              <!-- aceptar -->
+              <div class="wraper-details-checkbox">
+                <input type="checkbox" name="remember" id="remember" />
+                <label for="remember">Remember me</label>
+              </div>
+              <!-- btn-ingresar -->
+              <div class="btn-sigUp">
+                <input type="submit" value="Sign In" />
+              </div>
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <script src="../Semana-3/js/app.js"></script>
+    <script src="../Semana-3/js/main.js"></script>
+  </body>
+</html>

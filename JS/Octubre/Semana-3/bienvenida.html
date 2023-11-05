@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../Semana-3/styles/styles.css" />
+    <link rel="stylesheet" href="../Semana-3/styles/stylesToList.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="../Semana-3/index.html"
+          ><img src="../Semana-3/imgs/logo.png" alt="" srcset=""
+        /></a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Insights</a></li>
+        </ul>
+      </nav>
+      <div class="container-btns">
+        <button id="singUp" class="singUp">Sign up</button>
+        <button class="logIn">Log In</button>
+        <button class="contact">Contact us</button>
+      </div>
+    </header>
+    <main>
+      <section class="wrapper-taskItem">
+        <!-- añadir tarea -->
+        <form class="taskInput" id="submitButton">
+          <input type="text" id="add-btn" placeholder="New task..." />
+          <input type="submit" value="add" />
+        </form>
+        <!-- controles de las tareas todas, completadas y sin completar -->
+        <div class="controls">
+          <div class="filters">
+            <span id="add">All</span>
+            <span id="active">Active</span>
+            <span id="completed">Completed</span>
+          </div>
+          <!-- <button class="clear-btn">Clear All</button> -->
+        </div>
+        <ul class="task-box" id="task-box"></ul>
+      </section>
+    </main>
+    <script src="../Semana-3/js/todolist.js"></script>
+  </body>
+</html>

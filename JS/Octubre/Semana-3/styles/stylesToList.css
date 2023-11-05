@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  list-style: none;
+}
+
+.wrapper-taskItem {
+  padding: 50px 10%;
+  height: auto;
+  /* border: 1px solid black; */
+  /* overflow: hidden; */
+}
+
+.taskInput {
+  /* border: 1px solid #0a2d4e; */
+  height: 50px;
+  width: 100%;
+  /* padding: 0 20px; */
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskInput [type="text"],
+[type="submit"] {
+  height: 100%;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.taskInput [type="text"] {
+  width: 89%;
+  padding-left: 20px;
+  border: 1.5px solid #0a2d4e;
+}
+
+.taskInput [type="text"]:focus {
+  border-color: #53b4d3;
+  outline: none;
+}
+
+.taskInput [type="submit"] {
+  width: 10%;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #53b4d3;
+  border: none;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px;
+  cursor: pointer;
+}
+
+.controls {
+  /* border: 1px solid #0a2d4e; */
+  height: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid #ccc; */
+}
+
+.filters {
+  /* border: 1px solid #0a2d4e; */
+  padding: 13px 0;
+}
+.filters span {
+  /* border: 1px solid black; */
+  padding: 13px 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #888888;
+}
+
+.filters span.active {
+  border-bottom: 2px solid #0a2d4e;
+  color: #0a2d4e;
+}
+
+.filters span:hover {
+  background: #f4f6f7;
+  color: #5d5c5c;
+}
+
+.controls button {
+  width: 10%;
+  padding: 13px 0;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #53b4d3;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* las tolist */
+.task-box {
+  padding: 20px 0;
+  /* border: 1px solid #0a2d4e; */
+  height: auto;
+}
+
+.task-box .task {
+  font-size: 18px;
+  margin-bottom: 18px;
+  height: 50px;
+  /* border: 1px solid #0a2d4e; */
+  border-radius: 5px;
+  background: #f4f6f7;
+}
+
+/* .task-box .task:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+} */
+
+.task {
+  padding: 0 0 0 25px;
+}
+.task label input {
+  /* margin-top: 6px; */
+  margin-right: 12px;
+}
+
+.task label {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid #0a2d4e; */
+  height: 100%;
+  font-weight: 400;
+}
+
+/* .task label p.checked {
+  text-decoration: line-through;
+} */

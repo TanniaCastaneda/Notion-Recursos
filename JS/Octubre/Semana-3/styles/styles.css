@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 5px 10%;
+}
+
+.header .logo {
+  cursor: pointer;
+}
+
+.header .logo img {
+  height: 40px;
+  width: auto;
+}
+
+.header .nav-links {
+  margin: 0 auto;
+}
+.header .nav-links {
+  margin-left: 120px;
+}
+
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.header .nav-links a {
+  color: #2e2e2e;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.header .container-btns {
+  display: flex;
+}
+
+.header .container-btns button {
+  padding: 10px 25px;
+  margin-left: 10px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.header .container-btns button:hover {
+  border-radius: 20px;
+  background: #0a2d4e;
+  color: #fff;
+}
+
+.header .container-btns .contact,
+.getStartet {
+  border-radius: 20px;
+  background: #0a2d4e;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.pageOne {
+  padding: 0px 10%;
+}
+
+.contentPageOne {
+  background-image: url(../imgs/background.svg);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.miTitle {
+  width: 500px;
+}
+
+.miTitle h1 {
+  font-size: 60px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.miTitle h1 span:nth-child(2) {
+  color: #0082fa;
+}
+
+.contentPageOne p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.pageOne-information {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contentPageOne .getStartet {
+  padding: 10px 25px;
+  cursor: pointer;
+  border: none;
+}
+
+/* formulario */
+
+.wrapper-form {
+  width: 400px;
+  height: auto;
+  border-bottom-right-radius: 50px;
+  padding: 30px 30px 50px 30px;
+  box-shadow: 5px 10px 5px 1px rgba(0, 0, 0, 0.244);
+  background: #fff;
+}
+
+.btn-close {
+  display: flex;
+  justify-content: right;
+}
+
+.btn-close button {
+  background: none;
+  border: none;
+}
+
+.btn-close svg:hover {
+  fill: #44a047;
+  cursor: pointer;
+}
+
+.wraper-details {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+}
+
+.wraper-details input {
+  margin-top: 10px;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid #44a047;
+}
+
+.wraper-details input:focus {
+  border-color: #0a2d4e;
+  outline: none;
+}
+
+.wraper-datos {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* overflow: auto; */
+}
+
+.title-form p {
+  font-size: 50px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.btn-sigUp {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-sigUp input {
+  padding: 20px 50px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background: #44a047;
+  cursor: pointer;
+}
+
+.wraper-details-checkbox [type="checkbox"] {
+  accent-color: #44a047;
+}
+
+#item-form {
+  padding-top: 30px;
+}
+
+/* esto va con js EN LOS MENSAJES DE ERRORES*/
+.error-message {
+  margin-top: 10px;
+  background: #44a0479f;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  color: #fff;
+  display: none;
+  align-items: center;
+}
+
+/* para mi modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #111111bd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s;
+}
+
+.modal--show {
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity 0.6s;
+}
